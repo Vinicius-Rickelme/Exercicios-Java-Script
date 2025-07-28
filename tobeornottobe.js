@@ -3,23 +3,18 @@ function esperado(valor1) {
   return {
 
     toBe: function(valor2) {
-
       if (valor1 === valor2) {
         return "{value: true}"
       } else {
         return "{error: Not Equal}"
       }
-
     },
-    
     notToBe: function(valor2) {
-
       if (valor1 !== valor2) {
         return "{value: true}"
       } else {
         return "{error: Equal}"
       }
-
     }
   };
 }
